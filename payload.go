@@ -37,7 +37,7 @@ func (l *Payload) SetCustom(key string, value interface{}) {
 	l.customProperty[key] = value
 }
 
-// Get a custom key's value. If key is "aps", return nil.
+// GetCustom gets a custom key's value. If key is "aps", return nil.
 func (l *Payload) GetCustom(key string) interface{} {
 	if key == "aps" || l.customProperty == nil {
 		return nil
